@@ -1,0 +1,1 @@
+SeleniumRunner.exe WPDockerDemo.exe /ep:SeleniumBox /rf=Reports\%%S_%%Y-%%M-%%D_%%T.rxlog /tc:SeleniumBoxTest /confFile=BrowserMatrix.csv /pa:epUrl="https://789b1ea7eca7.element34.net/wd/hub"  %*

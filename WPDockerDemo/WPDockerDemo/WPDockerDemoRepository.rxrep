@@ -1,0 +1,201 @@
+﻿<repository
+id="e4902675-509f-431a-bc52-586ccf9edcfb"
+name="WPDockerDemoRepository"
+rxversion="7.1">
+	<codegen
+	classname="WPDockerDemoRepository"
+	namespace="WPDockerDemo">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="3c94c518-798a-4021-a8b1-40b618b7b892"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="a6a403cf-f8e5-47e4-9841-d297ef98d8ed"
+		isrooted="True"
+		name="WordPressInstallation"
+		searchtimeout="8000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,optiontag"
+			capname="optiontag"
+			id="d8bfbf41-c246-47a9-af7a-1a8a216f50cb"
+			name="EnglishUnitedStates"
+			refimgid="898216a0-210e-4d26-8e5d-9d221345fc02"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//select[#'language']/option[@value='']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="ca7b1c39-1e27-498e-b356-abd65b4c07f7"
+			name="LanguageContinue"
+			refimgid="b2c3c8b8-7bad-4ba5-aa2e-1be8befc9fae"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//input[#'language-continue']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="4cc5b9ca-ab63-434d-a6fd-ab4dccce1b4c"
+			name="WeblogTitle"
+			refimgid="a03bd0aa-eb32-44eb-baae-88a1b723bad7"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//input[#'weblog_title']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="604c0f23-0fd5-4c67-bf48-692ad18c2560"
+			name="UserLogin"
+			refimgid="b55228bd-e37d-490f-b8d3-fc68d351415e"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//input[#'user_login']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="55fa5f09-747e-4897-8aef-827aab6784c2"
+			name="Pass1Text"
+			refimgid="1513b1b6-f598-41ec-bbcb-228843f0f882"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//input[#'pass1-text']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="946daa33-1b14-41da-b29a-32734db25b18"
+			name="PwWeak"
+			refimgid="0fcc8058-f91e-4664-8cab-ae861b872eeb"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//form[#'setup']/table/tbody/tr[5]/td/label/input[@name='pw_weak' and @visible='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="e8dba429-aa0c-4b47-9b3d-bfa7512339ca"
+			name="AdminEmail"
+			refimgid="2787840e-9022-4aea-9e74-829c5f8fadf0"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//input[#'admin_email']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="eb022295-f2b6-4107-a937-48c863a98d62"
+			name="Submit"
+			refimgid="330dfb88-4f6e-4249-bf92-e5081054dcfc"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//input[#'submit']
+			</item>
+			<item
+			addcaps="unknown,webelement,h1tag"
+			capname="h1tag"
+			id="7d660776-6d49-48fe-827a-3610ad0d73c0"
+			name="Success"
+			refimgid="cf2266a2-1e14-4167-91f7-1c668c5fd2e9"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']/?/?/h1[@innertext='Success!']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="3a84d307-1ee3-48cc-9420-58e5ebfd599b"
+			name="LogIn"
+			refimgid="2bd7dd80-4058-41fb-be34-d13913ffc831"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']/body/p[3]/a[@innertext='Log In']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="948af896-337f-4e37-a1cc-3a9f72a8aadf"
+			name="UserPass"
+			refimgid="afdbc306-7084-4069-a964-c50ab6e608ee"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//input[#'user_pass']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="db410340-67ea-4be6-97ea-dac6855f3689"
+			name="WpSubmit"
+			refimgid="2a0e21d2-dd95-4ac6-b7e8-fbf6fef8b99a"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//input[#'wp-submit']
+			</item>
+			<item
+			addcaps="unknown,webelement,h2tag"
+			capname="h2tag"
+			id="4bd5bf58-1560-40e9-9827-0e20e63c81ff"
+			name="WelcomeToWordPress"
+			refimgid="7235bd7f-a37a-4dff-a5eb-8ed952ca6762"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//div[#'welcome-panel']/div/h2[@innertext='Welcome to WordPress!']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="litag"
+			id="54063121-c91b-4af0-a8c2-0489e05044e1"
+			name="HowdyRx"
+			refimgid="cd739fcc-c1d1-4343-ac64-f8465bca5a4f"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//li[#'wp-admin-bar-my-account']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="c727fddb-8945-4677-b228-1aeea4e1c0de"
+			name="LogOut"
+			refimgid="54dd5f5e-3ea6-4de0-9809-c348aa18efb4"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//li[#'wp-admin-bar-logout']/a[@innertext='Log Out']
+			</item>
+			<item
+			addcaps="unknown,webelement,ptag"
+			capname="ptag"
+			id="59989d21-0978-44f1-986b-790b5968d794"
+			name="PTagYouAreNowLoggedOut"
+			refimgid="9aa00247-1134-4f0e-a883-62210ba8889f"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//div[#'login']/p[@innertext='You are now logged out.']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="f1ca132d-8f94-4481-adad-b74fd74f8859"
+			name="PassStrengthResult"
+			refimgid="238957c4-0eaa-444f-963b-72fc7d66b86f"
+			searchtimeout="30000ms">
+				/dom[@domain~'.*:.*']//div[@id='pass-strength-result' and @visible='true']
+			</item>
+			<basepath>
+				/dom[@domain~'.*:.*']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

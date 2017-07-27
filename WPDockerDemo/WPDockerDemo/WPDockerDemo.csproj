@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{E776F5F0-1CF1-4278-B196-3D28B343EFC9}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WPDockerDemo</RootNamespace>
+    <AssemblyName>WPDockerDemo</AssemblyName>
+    <RanorexVersion>7.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>894536d3-8e31-43b2-b8c7-5a08167b4955</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Docker.DotNet, Version=2.124.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Docker.DotNet.2.124.3\lib\net45\Docker.DotNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Docker.DotNet.X509, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Docker.DotNet.X509.2.124.3\lib\net45\Docker.DotNet.X509.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.Cef" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.WebDriver" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>1962c3e5-541f-4dc8-8253-4405fdd3cad7</id>
+    </Compile>
+    <Compile Include="CloseWordpress.cs">
+      <BoundTo>e113854b-dca5-46c2-a8ca-6e83dc6d237c</BoundTo>
+      <DependentUpon>CloseWordpress.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bba36033-c1f0-45cc-a4b5-1b171e31b074</id>
+    </Compile>
+    <Compile Include="CloseWordpress.UserCode.cs">
+      <BoundTo>e113854b-dca5-46c2-a8ca-6e83dc6d237c</BoundTo>
+      <DependentUpon>CloseWordpress.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4ac69d0a-9242-41a1-a33f-4fba8d4606c0</id>
+    </Compile>
+    <Compile Include="CreateEndpoint.cs">
+      <id>c7e94763-727e-4c72-a2db-4c207aae6fbd</id>
+    </Compile>
+    <Compile Include="LoginToWordpress.cs">
+      <BoundTo>d618e333-7087-41bc-9752-d49024172c2c</BoundTo>
+      <DependentUpon>LoginToWordpress.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c5c8a588-6d71-4c37-a9db-a3f4bb9dbf5a</id>
+    </Compile>
+    <Compile Include="LoginToWordpress.UserCode.cs">
+      <BoundTo>d618e333-7087-41bc-9752-d49024172c2c</BoundTo>
+      <DependentUpon>LoginToWordpress.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0175a7b3-54e0-49c7-983c-8bb4ff6e545b</id>
+    </Compile>
+    <Compile Include="OpenWorpress.cs">
+      <BoundTo>3de88f95-4bda-46c6-8e05-f50e92846c63</BoundTo>
+      <DependentUpon>OpenWorpress.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bbed6c1f-ad07-4b0d-8b0f-083b32fdd30c</id>
+    </Compile>
+    <Compile Include="OpenWorpress.UserCode.cs">
+      <BoundTo>3de88f95-4bda-46c6-8e05-f50e92846c63</BoundTo>
+      <DependentUpon>OpenWorpress.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>be795850-a67f-4a53-bf15-982b20331c97</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>0241eacd-abe3-4552-ad1c-a818ca30213e</id>
+    </Compile>
+    <Compile Include="LogoutWordpress.cs">
+      <BoundTo>68ceb036-fabd-4a95-8507-5062788308c8</BoundTo>
+      <DependentUpon>LogoutWordpress.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ccf808f6-04bd-41e5-957f-86501fac5641</id>
+    </Compile>
+    <Compile Include="LogoutWordpress.UserCode.cs">
+      <BoundTo>68ceb036-fabd-4a95-8507-5062788308c8</BoundTo>
+      <DependentUpon>LogoutWordpress.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>05e70c71-d758-4ae3-b4a8-c66d4b5b2e8a</id>
+    </Compile>
+    <Compile Include="ReportSeleniumBoxLiveView.cs">
+      <id>af753307-2154-4223-a319-af6609922a50</id>
+    </Compile>
+    <Compile Include="ReportSeleniumBoxVideo.cs">
+      <id>a9bb1e96-2f16-4a95-8c68-bd9ffc1b4188</id>
+    </Compile>
+    <Compile Include="SetupWordpress.cs">
+      <BoundTo>eaedd631-5582-439d-9566-1b10320857c7</BoundTo>
+      <DependentUpon>SetupWordpress.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>441108ef-c15c-455b-9a7f-80268c487936</id>
+    </Compile>
+    <Compile Include="SetupWordpress.UserCode.cs">
+      <BoundTo>eaedd631-5582-439d-9566-1b10320857c7</BoundTo>
+      <DependentUpon>SetupWordpress.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6333377c-d7f5-4b3f-b057-355ff07fe940</id>
+    </Compile>
+    <Compile Include="SpawnWPContainer.cs">
+      <id>251cb4a1-c839-44f6-958c-f2f155b2f0b3</id>
+    </Compile>
+    <Compile Include="StopWPContainer.cs">
+      <id>27e2cb68-7d29-4841-afff-f9cb9ef8273e</id>
+    </Compile>
+    <Compile Include="WPDockerDemoRepository.cs">
+      <BoundTo>894536d3-8e31-43b2-b8c7-5a08167b4955</BoundTo>
+      <DependentUpon>WPDockerDemoRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>428df962-31e9-49c9-b31c-de415a73e110</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>dc9a7d71-efa6-404b-ac73-7a1e715ee04b</id>
+    </None>
+    <None Include="BrowserMatrix.csv">
+      <id>c5dc6fd9-eb21-4c20-8071-4bb0f60378b0</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CloseWordpress.rxrec">
+      <BoundTo>894536d3-8e31-43b2-b8c7-5a08167b4955</BoundTo>
+      <id>e113854b-dca5-46c2-a8ca-6e83dc6d237c</id>
+      <recordtableid>bbb9be6d-c8c0-456f-b8e3-9588e421155f</recordtableid>
+    </None>
+    <None Include="key.pfx">
+      <id>90e3ee04-5d1c-4a82-aff4-22f3fbcc58fb</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="LoginToWordpress.rxrec">
+      <BoundTo>894536d3-8e31-43b2-b8c7-5a08167b4955</BoundTo>
+      <id>d618e333-7087-41bc-9752-d49024172c2c</id>
+      <recordtableid>36bd94f2-adab-4019-8644-169c791e2c9b</recordtableid>
+    </None>
+    <None Include="Newtonsoft.Json.dll">
+      <id>8c062192-1512-48a6-bbc7-bfd9146c0345</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="OpenWorpress.rxrec">
+      <BoundTo>894536d3-8e31-43b2-b8c7-5a08167b4955</BoundTo>
+      <id>3de88f95-4bda-46c6-8e05-f50e92846c63</id>
+      <recordtableid>233eefc0-3545-4692-9d59-c489fbed98ae</recordtableid>
+    </None>
+    <None Include="LogoutWordpress.rxrec">
+      <BoundTo>894536d3-8e31-43b2-b8c7-5a08167b4955</BoundTo>
+      <id>68ceb036-fabd-4a95-8507-5062788308c8</id>
+      <recordtableid>f01c1088-e97b-4fa4-a3c7-708fcfa62c4e</recordtableid>
+    </None>
+    <None Include="packages.config">
+      <id>ada58d1e-0e10-445b-8355-143f698416bd</id>
+    </None>
+    <None Include="runTestsAcrossBrowsers_Internal.bat">
+      <id>366e48d2-ed2b-49ad-bf70-a569ef5935dc</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="runTestsAcrossBrowsers_SeleniumBox.bat">
+      <id>a11ffbd8-930d-440c-b161-08565c9544f0</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="SeleniumRunner.exe">
+      <id>64eaf238-0fdb-4322-aea5-bf24067d9bae</id>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="SetupWordpress.rxrec">
+      <id>eaedd631-5582-439d-9566-1b10320857c7</id>
+      <recordtableid>81ce6f37-a281-4776-b1d2-c5204de1eacd</recordtableid>
+      <BoundTo>894536d3-8e31-43b2-b8c7-5a08167b4955</BoundTo>
+    </None>
+    <None Include="WPDockerDemoRepository.rximg">
+      <BoundTo>894536d3-8e31-43b2-b8c7-5a08167b4955</BoundTo>
+      <DependentUpon>WPDockerDemoRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>1d89c212-f05f-49b5-a787-6aa8d7ce4ce4</id>
+    </None>
+    <None Include="WPDockerDemoRepository.rxrep">
+      <id>894536d3-8e31-43b2-b8c7-5a08167b4955</id>
+      <repoid>e4902675-509f-431a-bc52-586ccf9edcfb</repoid>
+      <reporootid>3c94c518-798a-4021-a8b1-40b618b7b892</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WPDockerDemo.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>f120fdc1-0532-4e56-ad6b-0d0c57249230</id>
+    </Content>
+    <Content Include="WPDockerDemo.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>02bd3068-afa3-4942-8b3e-f19cd9688562</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

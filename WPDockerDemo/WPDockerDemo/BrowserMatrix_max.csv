@@ -1,0 +1,23 @@
+Chrome;Firefox;Safari;IE;Edge
+Linux;Linux;;;
+Win10;Win10;;Win10;
+Win7;Win7;macOS 10.12;Win7;
+macOS 10.12;macOS 10.12;macOS 10.13;WinServer2012R2;Win10
+macOS  10.13;macOS  10.13;macOS  10.14;WinServer2016;WinServer2016
+Versions;Versions;Versions;Versions;Versions
+55;51;9.0.3;10;40
+56;52;9.1.3;11;
+57;53;10.0.3;;
+58;54;10.1;;
+59;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
